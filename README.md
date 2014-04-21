@@ -12,21 +12,26 @@ Usage
 
 Include the small JavaScript and CSS files in your page
 
-    <link type="text/css" rel="stylesheet" href="calcGrid.css"/>
-    <script type="text/javascript" src="calcGrid.js"></script>
- 
+```html
+<link type="text/css" rel="stylesheet" href="calcGrid.css"/>
+<script type="text/javascript" src="calcGrid.js"></script>
+``` 
 
 In your html create your grid
 
-	<div class="grid" data-row-sizes="50px, 1rel" data-col-sizes="1rel, 3rel">
-	    <div data-row-start="0" data-col-start="0"></div>
-	    <div data-row-start="0" data-col-start="1"></div>
-	    <div data-row-start="1" data-col-start="0" data-col-end="1"></div>
-	</div>
+```html
+<div class="grid" data-row-sizes="50px, 1rel" data-col-sizes="1rel, 3rel">
+    <div data-row-start="0" data-col-start="0"></div>
+    <div data-row-start="0" data-col-start="1"></div>
+    <div data-row-start="1" data-col-start="0" data-col-end="1"></div>
+</div>
+```
 
 Then bootstrap it in JavaScript
 
-	grid.init();
+```js
+grid.init();
+```
 
 You can also dynamically build up the grid entirely in JavaScript, see [the examples](examples/) for more details.
 
