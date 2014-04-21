@@ -30,7 +30,7 @@ In your html create your grid
 Then bootstrap it in JavaScript
 
 ```js
-grid.init();
+calcGrid.init();
 ```
 
 You can also dynamically build up the grid entirely in JavaScript, see [the examples](examples/) for more details.
