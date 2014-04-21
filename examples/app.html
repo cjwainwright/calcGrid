@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <link type="text/css" rel="stylesheet" href="app.css"/>
+        <link type="text/css" rel="stylesheet" href="../calcGrid.css"/>
+    </head>
+    <body>
+        <div class="calc-grid app" data-row-sizes="32px, 32px, 1rel, 24px" data-col-sizes="200px, 1rel, 30%">
+            <h1 data-row-start="0" data-col-start="0" data-col-end="2">
+                Sample application
+            </h1>        
+            <div data-row-start="1" data-col-start="0" data-col-end="2" class="toolbar">
+                <button><img src="images/page.png"/></button><!--
+                --><button><img src="images/folder.png"/></button><!--
+                --><button><img src="images/disk.png"/></button><!--
+                --><button><img src="images/cross.png"/></button>
+            </div>
+            <nav data-row-start="2" data-col-start="0">
+                <ul>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a>
+                        <ul>
+                            <li><a href="#">Page 2.1</a></li>
+                            <li><a href="#">Page 2.2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Page 3</a></li>
+                    <li><a href="#">Page 4</a></li>
+                </ul>
+            </nav>
+            <main data-row-start="2" data-col-start="1"></main>
+            <aside data-row-start="2" data-col-start="2">
+                <h2>Status<img src="images/pin.png"/></h2>
+                <ul>
+                    <li><a href="#"><img src="images/cross_octagon.png"/> Something went critically wrong</a></li>
+                    <li><a href="#"><img src="images/error.png"/> Something went slightly wrong</a></li>
+                    <li><a href="#"><img src="images/exclamation.png"/> I thought you should know</a></li>
+                </ul>
+            </aside>
+            <footer data-row-start="3" data-col-start="0" data-col-end="2">Last saved: 2014-04-21 16:38:37</footer>
+        </div>
+        <script type="text/javascript" src="../calcGrid.js"></script>
+        <script>
+            // initialising grids from existing html
+            var grids = calcGrid.init();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <link type="text/css" rel="stylesheet" href="page.css"/>
+        <link type="text/css" rel="stylesheet" href="../calcGrid.css"/>
+    </head>
+    <body>
+        <div class="calc-grid grid1" data-row-sizes="25% + 50px, 70px, 1rel" data-col-sizes="2rel, 1rel, 3rel">
+            <div data-row-start="0" data-col-start="0"></div>
+            <div data-row-start="0" data-col-start="1"></div>
+            <div data-row-start="1" data-col-start="0"></div>
+            <div data-row-start="1" data-col-start="1"></div>
+            <div data-row-start="2" data-col-start="0" data-col-end="2" class="calc-grid grid2" data-row-sizes="2rel, 1rel, 3rel" data-col-sizes="25%, 70px, 1rel">
+                <div data-row-start="0" data-row-end="1" data-col-start="0"></div>
+                <div data-row-start="2" data-col-start="0" data-col-end="1"></div>
+                <div data-row-start="1" data-col-start="1"></div>
+                <div data-row-start="1" data-row-end="2" data-col-start="2"></div>
+                <div data-row-start="0" data-col-start="1" data-col-end="2"></div>
+            </div>
+            <div data-row-start="0" data-row-end="1" data-col-start="2"></div>
+        </div>
+        <script type="text/javascript" src="../calcGrid.js"></script>
+        <script>
+            // initialising grids from existing html
+            var grids = calcGrid.init();
+        </script>
+    </body>
+</html>

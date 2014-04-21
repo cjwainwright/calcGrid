@@ -1,0 +1,18 @@
+﻿/**
+ * @license CalcGrid
+ * (c) 2014 C J Wainwright, http://cjwainwright.co.uk
+ * License: MIT
+ */
+ 
+.calc-grid {
+    position: relative;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.calc-grid > * {
+    position: absolute;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+}
